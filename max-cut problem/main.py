@@ -97,6 +97,8 @@ print("solution objective:", qp.objective.evaluate(x))
 colors = ["r" if x[i] == 0 else "c" for i in range(n)]
 draw_graph(G, colors, pos)
 
+# Daqui em diante dá o mesmo problema de "main thread is not in main loop" envolvendo o módulo plt
+
 # Running it on quantum computer
 
 algorithm_globals.random_seed = 123
